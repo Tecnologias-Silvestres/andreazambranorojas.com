@@ -41,3 +41,5 @@ fields:
       file: 
       path: 
   label: Page Type
+pages:
+- _src/pages/biografia.html
