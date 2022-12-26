@@ -23,11 +23,6 @@ fields:
     required: false
   label: Description
   description: The description of this post
-- name: permalink
-  type: text
-  config:
-    required: false
-  label: Permalink
 - name: tags
   type: tag_list
   default: []
