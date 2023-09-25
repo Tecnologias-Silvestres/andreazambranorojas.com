@@ -8,7 +8,8 @@
     "rebuild": "rm -rf _site && npx @11ty/eleventy",
     "serve": "npx @11ty/eleventy --serve --port 8001",
     "develop": "npm run rebuild && npm run serve",
-    "deploy": "npm run rebuild && npm run serve"
+    "deploy": "npm run rebuild && npm run serve",
+    "tina": "npx tinacms dev -c \"npm run deploy\""
   },
   "repository": {
     "type": "git",
@@ -24,5 +25,9 @@
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2",
     "@11ty/eleventy-img": "^2.0.1"
+  },
+  "dependencies": {
+    "@tinacms/cli": "^1.5.29",
+    "tinacms": "^1.5.20"
   }
 }
