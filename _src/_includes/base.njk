@@ -2,7 +2,7 @@
 eleventyComputed:
   backgroundImage: "/images/snail_shimmer_smooth.gif"
   borderColor: rgba(255, 100, 255, 1)
-  backgroundColor: rgb(100, 80, 93)
+  backgroundColor: rgb(0, 0, 0)
   shoulderBackground: rgba(255, 255, 255, 0.8)
 ---
 
@@ -43,7 +43,13 @@ eleventyComputed:
         <ul class="justified-list">
           <li><a href="/">Página Principal</a></li>
           <li><a href="/about/">Sobre Mí</a></li>
-          <li><a href="/chontakuros/">Chontakuros</a></li>
+          <div class="dropdown">
+            <li><a href="/chontakuros/">Chontakuros</a></li>
+            <div class="dropdown-content">
+              <a href="#">One bug</a>
+              <a href="#">Two bug</a>
+            </div>
+          </div>
         </ul>
       </div>
       <div class="nav-border"><div class="inner">
@@ -56,8 +62,7 @@ eleventyComputed:
       </main>
     </div>
 		<footer>
-			made by Cory Massaro |
-			built with <a href="https://www.11ty.dev">Eleventy</a>
+			construido con <a href="https://www.11ty.dev">Eleventy</a>
 		</footer>
   </body>
 <html>

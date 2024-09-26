@@ -43,7 +43,7 @@ a:hover {
   height: 100%;
   position: absolute;
   top: 0;
-  left: 80%;
+  right: 5%;
 }
 
 .nav-inner {
@@ -58,7 +58,7 @@ a:hover {
 
 .nav-border .inner {
   margin-top: 25px;
-  border-bottom: 2px solid {{ borderColor }};
+  /* border-bottom: 2px solid {{ borderColor }}; */
   z-index: 10;
 }
 
@@ -84,6 +84,26 @@ nav li {
 	color: {{ borderColor }};
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: {{ backgroundColor }};
+  min-width 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
 
 @keyframes moveimage {
   100% { background-position: -40% 80%; }
@@ -100,9 +120,7 @@ body {
   margin-bottom: 20px;
   padding: 3%;
   padding-left: 3%;
-  /* background: {{ shoulderBackground }}; */
-  background: rgba(255, 255, 255, 1);
-  border: 2px solid {{ borderColor }};
+  color: rgba(255, 255, 255, 1);
 }
 
 .justified-list {
@@ -126,7 +144,7 @@ footer {
 	margin: 50px;
 	text-align: right;
 	color: white;
-	border-top: 2px solid {{ borderColor }};
+	/* border-top: 2px solid {{ borderColor }}; */
 	padding-top: 20px;
 }
 
